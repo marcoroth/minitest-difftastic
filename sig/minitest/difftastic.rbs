@@ -1,0 +1,5 @@
+module Minitest
+  module Difftastic
+    VERSION: String
+  end
+end
