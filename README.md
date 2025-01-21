@@ -1,5 +1,9 @@
 # Minitest::Difftastic
 
+A Minitest Plugin which uses [`difftastic`](https://github.com/Wilfred/difftastic) (via [`difftastic-ruby`](https://github.com/joeldrapper/difftastic-ruby)) to show the diffs for failing assertions. 
+
+Also works for for Rails tests using `ActiveSupport::TestCase`.
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
