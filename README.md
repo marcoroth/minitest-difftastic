@@ -1,8 +1,24 @@
 # Minitest::Difftastic
 
-A Minitest Plugin which uses [`difftastic`](https://github.com/Wilfred/difftastic) (via [`difftastic-ruby`](https://github.com/joeldrapper/difftastic-ruby)) to show the diffs for failing assertions. 
+A Minitest Plugin which uses [`difftastic`](https://github.com/Wilfred/difftastic) (via [`difftastic-ruby`](https://github.com/joeldrapper/difftastic-ruby)) to show the diffs for failing assertions.
 
 Also works for Rails tests using `ActiveSupport::TestCase`.
+
+### Integers
+
+![Integers Comparison](./screenshots/integers.png)
+
+### Strings
+
+![Strings Comparison](./screenshots/strings.png)
+
+### Objects
+
+![Objects Comparison](./screenshots/objects.png)
+
+### Nested Objects
+
+![Nested Objects Comparison](./screenshots/nested_objects.png)
 
 ## Installation
 
