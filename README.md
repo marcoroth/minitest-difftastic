@@ -20,7 +20,7 @@ gem install minitest-difftastic
 
 ## Usage
 
-The plugins will be automatically detected and picked up my Minitest if you have it added to your applications Gemfile.
+The plugin will be automatically detected and picked up by Minitest if you have it added to the Gemfile of your application.
 
 ## Development
 
