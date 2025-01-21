@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Marco Roth"]
   spec.email = ["marco.roth@intergga.ch"]
 
-  spec.summary = "Minitest Plugin to use difftastic for diffing"
-  spec.description = "Minitest Plugin to use difftastic for diffing"
+  spec.summary = "Minitest Plugin to use difftastic for failed assertions"
+  spec.description = spec.summary
   spec.homepage = "https://github.com/marcoroth/minitest-difftastic"
   spec.required_ruby_version = ">= 3.0.0"
 
