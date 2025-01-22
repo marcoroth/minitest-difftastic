@@ -7,7 +7,7 @@ module Minitest
   module Assertions
     DIFFER = ::Difftastic::Differ.new(
       color: :always,
-      tab_width: TAB_WIDTH,
+      tab_width: 2,
       syntax_highlight: :off,
       left_label: "Expected",
       right_label: "Actual"
