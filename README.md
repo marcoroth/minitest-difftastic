@@ -22,10 +22,10 @@ Also works for Rails tests using `ActiveSupport::TestCase`.
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+Install the gem and add to the application's Gemfile `test` group by executing:
 
 ```shell
-bundle add minitest-difftastic
+bundle add minitest-difftastic --group=test
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
