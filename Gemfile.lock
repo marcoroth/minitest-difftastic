@@ -2,15 +2,15 @@ PATH
   remote: .
   specs:
     minitest-difftastic (0.1.1)
-      difftastic (~> 0.0.1)
+      difftastic (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
     base64 (0.1.1)
-    difftastic (0.0.1-arm64-darwin)
-    difftastic (0.0.1-x86_64-linux)
+    difftastic (0.2.0-arm64-darwin)
+    difftastic (0.2.0-x86_64-linux)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     minitest (5.25.4)
