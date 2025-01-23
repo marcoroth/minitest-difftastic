@@ -18,7 +18,7 @@ module Minitest
     def diff(exp, act)
       DIFFER.diff_objects(exp, act)
     rescue StandardError => e
-      puts "Minitest::DiffTastic error: #{e.inspect} (#{e.backtrace[0]})"
+      puts "Minitest::Difftastic error: #{e.inspect} (#{e.backtrace[0]})"
       diff_original(exp, act)
     end
   end
