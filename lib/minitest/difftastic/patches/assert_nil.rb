@@ -15,7 +15,7 @@ module Minitest::Assertions
     msg ||= differ.diff_objects(nil, obj)
 
     minitest_assert_nil(obj, msg)
-  rescue => e
+  rescue StandardError
     minitest_assert_nil(obj, msg)
   end
 end
