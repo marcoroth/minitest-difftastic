@@ -8,7 +8,7 @@ module Minitest::Assertions
       color: :always,
       tab_width: 2,
       syntax_highlight: :off,
-      left_label: "Expected to be empty",
+      left_label: "Expected",
       right_label: "Actual"
     )
 
