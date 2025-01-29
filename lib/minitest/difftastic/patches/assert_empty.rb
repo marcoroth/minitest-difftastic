@@ -15,6 +15,8 @@ module Minitest::Assertions
     case obj
     when String
       msg = differ.diff_objects("", obj)
+    when Symbol
+      msg = differ.diff_objects(:"", obj)
     when Array
       msg = differ.diff_objects([], obj)
     when Object
