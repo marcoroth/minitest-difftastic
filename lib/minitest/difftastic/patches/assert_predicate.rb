@@ -4,32 +4,34 @@ module Minitest::Assertions
   alias minitest_assert_predicate assert_predicate
 
   def assert_predicate(object, predicate, msg = nil)
-    pretty = Difftastic.pretty(object)
+    msg ||= message(nil, "") {
+      pretty = Difftastic.pretty(object)
 
-    expected = <<~ABC
-      #{pretty}.#{predicate}
+      expected = <<~RUBY
+        #{pretty}.#{predicate}
 
-      # => true
-    ABC
+        # => true
+      RUBY
 
-    actual = <<~ABC
-      #{pretty}.#{predicate}
+      actual = <<~RUBY
+        #{pretty}.#{predicate}
 
-      # => false
-    ABC
+        # => false
+      RUBY
 
-    differ = ::Difftastic::Differ.new(
-      color: :always,
-      tab_width: 2,
-      syntax_highlight: :on,
-      left_label: "Expected",
-      right_label: "Actual",
-      context: expected.lines.count
-    )
+      differ = ::Difftastic::Differ.new(
+        color: :always,
+        tab_width: 2,
+        syntax_highlight: :on,
+        left_label: "Expected",
+        right_label: "Actual",
+        context: expected.lines.count
+      )
 
-    message = differ.diff_ruby(expected, actual)
+      "\n#{differ.diff_ruby(expected, actual)}"
+    }
 
-    minitest_assert_predicate(object, predicate, message)
+    minitest_assert_predicate(object, predicate, msg)
   rescue StandardError
     minitest_assert_predicate(object, predicate, msg)
   end
