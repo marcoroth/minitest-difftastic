@@ -39,5 +39,34 @@ module Examples
 
       assert_equal expected, actual
     end
+
+    def test_assert_equal_string_with_newlines
+      expected = <<~RUBY
+        class User < ApplicationRecord
+          has_many :posts
+        end
+      RUBY
+
+      actual = <<~RUBY
+        class User < ApplicationRecord
+          has_many :posts
+          ^^^^^^^^^^^^^^^ Rubocop::SomeRule Missing association to `organization`
+        end
+      RUBY
+
+      assert_equal expected, actual
+    end
+
+    def test_assert_equal_string_with_newlines_on_one_side
+      expected = <<~RUBY
+        Hello
+
+        World
+      RUBY
+
+      actual = "Hello"
+
+      assert_equal expected, actual
+    end
   end
 end

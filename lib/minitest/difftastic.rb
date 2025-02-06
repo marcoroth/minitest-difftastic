@@ -12,4 +12,12 @@ module Minitest::Difftastic
     left_label: "Expected",
     right_label: "Actual"
   )
+
+  STRING_DIFFER = ::Difftastic::Differ.new(
+    color: :always,
+    tab_width: 2,
+    syntax_highlight: :off,
+    left_label: "Expected (String)",
+    right_label: "Actual (String)"
+  )
 end
