@@ -22,6 +22,8 @@ Expected                      Actual
 1 "Hello World"               1 "Hello Difftastic"
 ```
 
+You can also look at the source code for the examples in the [`examples/`](https://github.com/marcoroth/minitest-difftastic/tree/main/examples) folder.
+
 ## Screenshots
 
 ### Integers
