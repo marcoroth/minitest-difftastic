@@ -20,6 +20,12 @@ Style/StringLiteralsInInterpolation:
 Style/WordArray:
   Enabled: false
 
+Style/BlockDelimiters:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
 Layout/LineLength:
   Max: 120
 
