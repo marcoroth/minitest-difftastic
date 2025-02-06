@@ -56,5 +56,17 @@ module Examples
 
       assert_equal expected, actual
     end
+
+    def test_assert_equal_string_with_newlines_on_one_side
+      expected = <<~RUBY
+        Hello
+
+        World
+      RUBY
+
+      actual = "Hello"
+
+      assert_equal expected, actual
+    end
   end
 end
