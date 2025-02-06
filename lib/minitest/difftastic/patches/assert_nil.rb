@@ -1,23 +1,26 @@
 # frozen_string_literal: true
 
-module Minitest::Assertions
-  alias minitest_assert_nil assert_nil
+module Difftastic
+  module Patches
+    module AssertNil
+      def assert_nil(obj, msg = nil)
+        msg ||= message(nil, "") {
+          differ = ::Difftastic::Differ.new(
+            color: :always,
+            tab_width: 2,
+            syntax_highlight: :off,
+            left_label: "Expected",
+            right_label: "Actual"
+          )
 
-  def assert_nil(obj, msg = nil)
-    msg ||= message(nil, "") {
-      differ = ::Difftastic::Differ.new(
-        color: :always,
-        tab_width: 2,
-        syntax_highlight: :off,
-        left_label: "Expected",
-        right_label: "Actual"
-      )
+          "\n#{differ.diff_objects(nil, obj)}"
+        }
+        super
+      rescue StandardError
+        super
+      end
 
-      "\n#{differ.diff_objects(nil, obj)}"
-    }
-
-    minitest_assert_nil(obj, msg)
-  rescue StandardError
-    minitest_assert_nil(obj, msg)
+      Minitest::Assertions.prepend(self)
+    end
   end
 end
