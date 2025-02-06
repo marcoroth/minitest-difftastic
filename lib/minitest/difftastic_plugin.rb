@@ -6,3 +6,4 @@ require "minitest/difftastic/patches/diff"
 
 require "minitest/difftastic/patches/assert_nil"
 require "minitest/difftastic/patches/assert_operator"
+require "minitest/difftastic/patches/assert_predicate"
