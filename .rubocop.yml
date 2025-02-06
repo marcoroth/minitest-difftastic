@@ -17,5 +17,13 @@ Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/WordArray:
+  Enabled: false
+
 Layout/LineLength:
   Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+  Include:
+    - examples/**/*
