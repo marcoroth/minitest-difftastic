@@ -12,7 +12,7 @@ module Examples
       assert_operator 1, :eql?, 1.0
     end
 
-    def test_operator_eql
+    def test_operator_equal
       assert_operator 1, :equal?, 1.0
     end
 
