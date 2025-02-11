@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    minitest-difftastic (0.1.2)
+    minitest-difftastic (0.2.0)
       difftastic (~> 0.6)
 
 GEM
