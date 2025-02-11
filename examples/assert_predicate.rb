@@ -17,6 +17,8 @@ module Examples
     end
 
     def test_assert_predicate_with_custom_method
+      return if Gem::Version.new(RUBY_VERSION) < "3.2"
+
       test = Data.define(:enabled) do
         def self.name
           "Config"
