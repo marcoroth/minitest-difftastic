@@ -3,7 +3,7 @@
 module Difftastic
   module Patches
     module AssertOperator
-      def assert_operator(object1, operator, object2 = UNDEFINED, msg = nil)
+      def assert_operator(object1, operator, object2 = Minitest::Assertions::UNDEFINED, msg = nil)
         msg ||= message(nil, "") {
           differ = ::Difftastic::Differ.new(
             color: :always,

@@ -19,5 +19,9 @@ module Examples
     def test_operator_lt
       assert_operator 1, :>, 2
     end
+
+    def test_predicate_operator
+      assert_operator [1, 2, 3], :empty?
+    end
   end
 end
