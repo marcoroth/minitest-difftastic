@@ -12,7 +12,7 @@ end
 Rake::TestTask.new(:examples) do |t|
   t.libs << "examples"
   t.libs << "lib"
-  t.test_files = FileList["examples/**/*.rb"]
+  t.test_files = FileList["examples/**/assert_*.rb"]
 end
 
 require "rubocop/rake_task"
