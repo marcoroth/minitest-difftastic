@@ -12,6 +12,10 @@ module Examples
       assert_predicate "1", :empty?
     end
 
+    def test_assert_predicate_object_empty
+      assert_predicate({ id: 1 }, :empty?)
+    end
+
     def test_assert_predicate_string_frozen
       assert_predicate(+"", :frozen?)
     end
