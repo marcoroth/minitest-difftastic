@@ -1,0 +1,4 @@
+
+[91;1mExpected                      [92;1mActual[0m
+[91;1m1 [0m[91mnil[0m                         [92;1m1 [0m[92mtrue[0m.
+Expected true to be nil.

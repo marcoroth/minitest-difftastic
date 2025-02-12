@@ -1,0 +1,4 @@
+
+[91;1mExpected                      [92;1mto be empty?[0m
+[91;1m1 [0m[91m[[0m[91m1[0m[91m,[0m [91m2[0m[91m,[0m [91m3[0m[91m][0m                   [92;1m1 [0m[92mObject[0m[92m([0m[92m)[0m.
+Expected [1, 2, 3] to be empty?.

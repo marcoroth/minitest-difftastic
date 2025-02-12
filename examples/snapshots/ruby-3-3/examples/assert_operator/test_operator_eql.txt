@@ -1,0 +1,4 @@
+
+[91;1mExpected                      [92;1mto be eql?[0m
+[91;1m1 [0m[91m1[0m                           [92;1m1 [0m[92m1.0[0m.
+Expected 1 to be eql? 1.0.

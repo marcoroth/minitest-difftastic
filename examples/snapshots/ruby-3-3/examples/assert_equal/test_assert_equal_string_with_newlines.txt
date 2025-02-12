@@ -1,0 +1,7 @@
+
+[91;1mExpected (String)                       [92;1mActual (String)[0m
+[2m1 [0mclass User < ApplicationRecord        [2m1 [0mclass User < ApplicationRecord
+[2m2 [0m  has_many :posts                     [2m2 [0m  has_many :posts
+[2m. [0m                                      [92;1m3 [0m[92;1m [0m[92;1m [0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m^[0m[92;1m [0m[92;1mRubocop[0m[92;1m:[0m[92;1m:[0m[92;1mSomeRule[0m[92;1m [0m[92;1mM[0m
+[2m. [0m                                      [92;1m[2m. [0m[0m[92;1missing[0m[92;1m [0m[92;1massociation[0m[92;1m [0m[92;1mto[0m[92;1m [0m[92;1m`[0m[92;1morganization[0m[92;1m`[0m
+[2m3 [0mend                                   [2m4 [0mend

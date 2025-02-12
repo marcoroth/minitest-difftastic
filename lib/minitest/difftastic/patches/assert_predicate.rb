@@ -22,6 +22,7 @@ module Difftastic
           differ = ::Difftastic::Differ.new(
             color: :always,
             tab_width: 2,
+            width: ::Minitest::Difftastic::Config.width,
             syntax_highlight: :on,
             left_label: "Expected",
             right_label: "Actual",

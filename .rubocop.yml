@@ -33,3 +33,7 @@ Metrics/MethodLength:
   Max: 20
   Include:
     - examples/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - Rakefile

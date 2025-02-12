@@ -8,3 +8,5 @@ require "minitest/autorun"
 require "set"
 require "date"
 require "pathname"
+
+require_relative "snapshot_helper" if ENV["VERIFY_SNAPSHOTS"]

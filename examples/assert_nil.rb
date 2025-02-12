@@ -8,10 +8,6 @@ module Examples
       assert_nil "String"
     end
 
-    def test_assert_nil_with_nil
-      assert_nil nil
-    end
-
     def test_assert_nil_with_true
       assert_nil true
     end
