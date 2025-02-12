@@ -20,20 +20,20 @@ module Examples
       assert_predicate(+"", :frozen?)
     end
 
-    def test_assert_predicate_with_custom_method
-      return if Gem::Version.new(RUBY_VERSION) < "3.2"
+    if Gem::Version.new(RUBY_VERSION) >= "3.2"
+      def test_assert_predicate_with_custom_method
+        test = Data.define(:enabled) do
+          def self.name
+            "Config"
+          end
 
-      test = Data.define(:enabled) do
-        def self.name
-          "Config"
+          def enabled?
+            enabled
+          end
         end
 
-        def enabled?
-          enabled
-        end
+        assert_predicate test.new(enabled: false), :enabled?
       end
-
-      assert_predicate test.new(enabled: false), :enabled?
     end
   end
 end
