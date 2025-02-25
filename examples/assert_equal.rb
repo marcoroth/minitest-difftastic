@@ -68,5 +68,25 @@ module Examples
 
       assert_equal expected, actual
     end
+
+    def test_assert_equal_with_array_more_than_ten_items
+      array = [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+
+      assert_equal array, [*array, 13, 14, 15]
+    end
   end
 end
