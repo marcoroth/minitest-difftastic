@@ -4,6 +4,28 @@ A Minitest Plugin which uses [`difftastic`](https://github.com/Wilfred/difftasti
 
 Also works for Rails tests using `ActiveSupport::TestCase`.
 
+## Try it yourself
+
+Clone this repo, run `bundle install` and then `rake examples` in your terminal.
+
+```ruby
+rake examples
+```
+
+You will get a few failing assertions printed to your terminal.
+
+```
+Failure:
+Examples::AssertEqual#test_assert_equal [examples/assert_equal.rb:8]:
+
+Expected                      Actual
+1 "Hello World"               1 "Hello Difftastic"
+```
+
+You can also look at the source code for the examples in the [`examples/`](https://github.com/marcoroth/minitest-difftastic/tree/main/examples) folder.
+
+## Screenshots
+
 ### Integers
 
 ![Integers Comparison](./screenshots/integers.png)

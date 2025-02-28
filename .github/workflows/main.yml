@@ -25,3 +25,6 @@ jobs:
 
       - name: Run the default task
         run: bundle exec rake
+
+      - name: Verify Snapshots
+        run: bundle exec rake snapshots:verify
