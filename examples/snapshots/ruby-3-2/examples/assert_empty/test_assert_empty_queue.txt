@@ -1,0 +1,3 @@
+[91;1mExpected                      [92;1mActual[0m
+[91;1m1 [0mThread::Queue([91m0[0m)            [92;1m1 [0mThread::Queue([92m2[0m).
+Expected #<Thread::Queue:0x000000010941b720> to be empty.

@@ -1,0 +1,10 @@
+[91;1mExpected                          [92;1mActual[0m
+[2m1 [0m                                [92;1m1 [0m[92;3m#!/usr/bin/env ruby[0m
+[2m. [0m                                [92;1m2 [0m[92;3m# frozen_string_literal: true[0m
+[2m. [0m                                [92;1m3 [0m
+[2m. [0m                                [92;1m4 [0m[92mrequire[0m [92m"bundler/setup"[0m
+[2m. [0m                                [92;1m5 [0m[92mrequire[0m [92m"minitest/difftastic"[0m
+[2m. [0m                                [92;1m6 [0m[92mrequire[0m [92m"irb"[0m
+[2m. [0m                                [92;1m7 [0m
+[2m. [0m                                [92;1m8 [0m[92mIRB[0m[92m.[0m[92mstart[0m[92m([0m[92m__FILE__[0m[92m)[0m.
+Expected #<Pathname:bin/console> to be empty.

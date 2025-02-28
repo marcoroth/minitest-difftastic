@@ -1,0 +1,10 @@
+[91;1mExpected                                [92;1mActual[0m
+[2m1 [0m[]                                    [2m1 [0m[
+[2m. [0m                                      [92;1m2 [0m  [92mPathname[0m[92m([0m[92m"lib/minitest/difftastic.r[0m
+[2m. [0m                                      [92;1m[2m. [0m[0m[92mb"[0m[92m)[0m[92m,[0m
+[2m. [0m                                      [92;1m3 [0m  [92mPathname[0m[92m([0m[92m"lib/minitest/difftastic_p[0m
+[2m. [0m                                      [92;1m[2m. [0m[0m[92mlugin.rb"[0m[92m)[0m[92m,[0m
+[2m. [0m                                      [92;1m4 [0m  [92mPathname[0m[92m([0m[92m"lib/minitest/difftastic"[0m[92m)[0m
+[2m. [0m                                      [92;1m[2m. [0m[0m[92m,[0m
+[2m. [0m                                      [2m5 [0m].
+Expected #<Pathname:lib/minitest> to be empty.
