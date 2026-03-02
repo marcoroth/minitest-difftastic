@@ -56,6 +56,17 @@ If bundler is not being used to manage dependencies, install the gem by executin
 gem install minitest-difftastic
 ```
 
+### Minitest 6
+
+Minitest doesn't load plugin automatically, so you need to call 
+```ruby
+# (typically in test/test_helper.rb)
+# either
+Minitest.load :difftastic
+# or
+Minitest.load_plugins # To load all plugins, like Minitest 5 did
+```
+
 ## Usage
 
 The plugin will be automatically detected and picked up by Minitest if you have it added to the Gemfile of your application.
